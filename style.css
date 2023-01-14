@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+
+}
+/* header starts */
+.header-container{
+ background: rgba(255, 144, 14, 0.1);
+
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 230px 140px 230px;
+}
+.nav-h1{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+ul li{
+    display: inline;
+    font-size: 18px;
+    color: black;
+    margin-left: 30px;
+}
+/* header items starts */
+.div-container{
+    text-align: center;
+    padding: 0 530px 0 530px;
+}
+.header-btn{
+    width: 180px;
+    height: 64px;
+    font-size: 20px;
+    background-color: darkorange;
+    border-radius: 5px;
+    color: aliceblue;
+    border: none;
+}
+
+.img-container{
+    text-align: center;
+}
+.img-container img{
+    width: 1140px;
+    height: 500px;
+    padding-bottom: 45px;
+}
+
+/* header ends */
+
+/* main section starts */
+.sec-container{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin: 50px 100px 100px 100px;
+}
+.sec-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+}
+.img-info{
+    width: 342px;
+    height: 342px;
+    
+}
+/* main part -2 */
+.sec2-container{
+    display: flex;
+    gap: 54px;
+    padding: 10px 100px 10px 100px; 
+}
+.sec2-desc{
+    width: 586px;
+    height: 171px;
+    background-color: 
+    #FFFFFF;
+    box-shadow: 10px 10px 20px 15px rgb(232, 221, 221);
+    border-radius: 10px;
+    
+}
+.sec2-desc>h3,p{
+    padding-left: 10px;
+    padding-bottom: 10px ;
+    padding-top: 10px;
+}
+.sec2-tittle>div{
+   gap: 5px; 
+}
+.sec2-tittle{
+    width: 586px;
+    height: 982px;
+}
+.sec2-info{
+    width: 708px;
+    height: 982px;
+ 
+}
+
+.sec2-info img{
+    width: 550px;
+    height: 800px;
+
+}
+/* sec3 starts */
+.sec3-container{
+justify-content: center;
+}
+.sec3-div{
+    width: 250px;
+height: 150px;
+background-color: darkorange;
+color: #FFFFFF;
+border-radius: 5px;
+text-align:center;
+position: relative;
+left: 53%;
+bottom: 210px;
+
+
+
+}
+/* ends */
+/* section4 starts */
+.sec4-div{
+    margin: 0 500px 150px 100px;
+}
