@@ -22,6 +22,16 @@ body{
     font-size: 45px;
     font-weight: 700;
 }
+.nav-desc{
+
+    display: flex;
+    margin-left: 20px;
+    
+}
+.nav-bar a{
+ text-decoration: none;
+ margin-left: 20px;
+}
 ul li{
     display: inline;
     font-size: 18px;
@@ -30,8 +40,9 @@ ul li{
 }
 /* header items starts */
 .div-container{
+    padding: 0 400px 0 400px;
     text-align: center;
-    padding: 0 530px 0 530px;
+   
 }
 .header-btn{
     width: 180px;
@@ -41,15 +52,23 @@ ul li{
     border-radius: 5px;
     color: aliceblue;
     border: none;
+    margin-bottom: 100px;
 }
 
 .img-container{
     text-align: center;
+
+    display: flex;
+    justify-content: center;
 }
+
 .img-container img{
     width: 1140px;
     height: 500px;
     padding-bottom: 45px;
+}
+.img-container img{
+    width: 100;
 }
 
 /* header ends */
@@ -57,9 +76,11 @@ ul li{
 /* main section starts */
 .sec-container{
     display: flex;
-    gap: 100px;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 50px 100px 100px 100px;
+    gap: 100px;
+   
+    margin: 50px 100px 100px 100px; 
 }
 .sec-img{
     display: grid;
@@ -75,8 +96,13 @@ ul li{
 /* main part -2 */
 .sec2-container{
     display: flex;
-    gap: 54px;
-    padding: 10px 100px 10px 100px; 
+    justify-content: space-between;
+    /* gap: 54px;
+    padding: 10px 100px 10px 100px;  */
+    margin: 0 80px;
+    gap: 50PX;
+    
+   
 }
 .sec2-desc{
     width: 586px;
@@ -86,27 +112,29 @@ ul li{
     box-shadow: 10px 10px 20px 15px rgb(232, 221, 221);
     border-radius: 10px;
     
+    
 }
 .sec2-desc>h3,p{
     padding-left: 10px;
     padding-bottom: 10px ;
     padding-top: 10px;
 }
-.sec2-tittle>div{
+/* .sec2-tittle>div{
    gap: 5px; 
-}
+} */
 .sec2-tittle{
-    width: 586px;
-    height: 982px;
+    /* width: 586px;
+    height: 982px; */
+    width: 100%
 }
 .sec2-info{
-    width: 708px;
-    height: 982px;
+   
+    width: 100%
  
 }
 
 .sec2-info img{
-    width: 550px;
+    width: 100%;
     height: 800px;
 
 }
@@ -123,7 +151,7 @@ border-radius: 5px;
 text-align:center;
 position: relative;
 left: 53%;
-bottom: 210px;
+bottom: 200px;
 
 
 
@@ -131,16 +159,18 @@ bottom: 210px;
 /* ends */
 /* section4 starts */
 .sec4-div{
-    margin: 0 500px 150px 100px;
+    margin: 0 500px 200px 100px;
 }
 
 /* ends */
 /* sec5 starts */
 .sec5-tittle{
    align-items: center;
+   justify-content: space-evenly;
     display: flex;
-    gap: 80px;
-    margin: 100px 200px;
+    
+    /* margin: 100px 200px; */
+    margin-bottom: 50px;
 }
 .sec5-desc{
     width: 180px;
@@ -149,6 +179,7 @@ bottom: 210px;
     align-items: center;
     border-radius: 5px;
     transition: transform 1s;
+    margin-top: 100px;
    
 
 }
@@ -166,13 +197,16 @@ bottom: 210px;
 }
 .sec6-div{
     text-align: center;
+    margin: 50px;
    }
 
    .sec6-img{
-    align-items: center;
-   
+    display: flex;
+    justify-content: space-evenly;
+    margin:50px;
+/*    
     margin: 50px 100px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
    
    }
 .sec6-img a{
@@ -192,8 +226,12 @@ bottom: 210px;
 /* footer starts */
 .footer-container{
     align-items: center;
-    text-align: center;
-    margin: 150px 250px;
+    display: flex;
+    justify-content: center;
+    /* text-align: center;
+    margin: 150px 250px; */
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .footer-desc{
     text-align: center;
@@ -202,4 +240,62 @@ bottom: 210px;
 height: 100px;
 border-radius: 5px;
 background-color: bisque;
+}
+
+/* media quary  */
+@media screen and (max-width:576px){
+    .sec5-tittle,.sec6-img{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .div-container{
+        flex-direction: column;
+     align-items: center;
+    }
+    .nav-bar{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .sec2-container{
+        flex-direction: column;
+      
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin: 5px;
+       
+      
+    }
+    .sec-container{
+       
+        flex-direction: column;
+        text-align: center;
+      
+        margin: 5px;
+       
+    } 
+    .sec4-div{
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+    }
+    .div-container{
+text-align: center;
+padding: 20px;
+    }
+    .nav-tittle{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .img-container img{
+        flex-direction: column;
+        width: 80%;
+    }
+    .sec-img{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        padding: 50px;
+    }
 }
