@@ -31,6 +31,7 @@ body{
 .nav-bar a{
  text-decoration: none;
  margin-left: 20px;
+
 }
 ul li{
     display: inline;
@@ -101,6 +102,7 @@ ul li{
     padding: 10px 100px 10px 100px;  */
     margin: 0 80px;
     gap: 50PX;
+
     
    
 }
@@ -122,16 +124,7 @@ ul li{
 /* .sec2-tittle>div{
    gap: 5px; 
 } */
-.sec2-tittle{
-    /* width: 586px;
-    height: 982px; */
-    width: 100%
-}
-.sec2-info{
-   
-    width: 100%
- 
-}
+
 
 .sec2-info img{
     width: 100%;
@@ -261,7 +254,7 @@ background-color: bisque;
     .sec2-container{
         flex-direction: column;
       
-        width: 100%;
+       justify-items: center;
         align-items: center;
         text-align: center;
         margin: 5px;
@@ -297,5 +290,11 @@ padding: 20px;
         grid-template-columns: repeat(1, 1fr);
         gap: 50px;
         padding: 50px;
+    }
+    .nav-desc,.header-container{
+     flex-direction: column;
+     gap: 20px;
+     text-align: center;
+     justify-items: center;
     }
 }
